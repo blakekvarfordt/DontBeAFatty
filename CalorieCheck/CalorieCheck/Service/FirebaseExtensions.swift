@@ -10,6 +10,7 @@ import Foundation
 import FirebaseFirestore
 
 extension Firestore {
-    
+    var users: CollectionReference {return collection(User.FirebaseKeys.userKey)}
+    var food: CollectionReference {return collection(Food.FirebaseKeys.foodKey)}
 }
 

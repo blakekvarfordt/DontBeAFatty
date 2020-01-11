@@ -24,6 +24,8 @@
 		63E46FFC23CA50CF0040E5CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FFB23CA50CF0040E5CE /* User.swift */; };
 		63E46FFF23CA56BA0040E5CE /* GenericDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FFE23CA56BA0040E5CE /* GenericDecoder.swift */; };
 		63E4700223CA5FD60040E5CE /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4700123CA5FD60040E5CE /* Segues.swift */; };
+		63E4700423CA8E070040E5CE /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4700323CA8E070040E5CE /* Food.swift */; };
+		63E4700623CA926F0040E5CE /* FirebaseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4700523CA926F0040E5CE /* FirebaseErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		63E46FFB23CA50CF0040E5CE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		63E46FFE23CA56BA0040E5CE /* GenericDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDecoder.swift; sourceTree = "<group>"; };
 		63E4700123CA5FD60040E5CE /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		63E4700323CA8E070040E5CE /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		63E4700523CA926F0040E5CE /* FirebaseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				63E46FFB23CA50CF0040E5CE /* User.swift */,
+				63E4700323CA8E070040E5CE /* Food.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 			children = (
 				63E46FF723CA4F3D0040E5CE /* FirebaseManager.swift */,
 				63E46FF923CA4F4E0040E5CE /* FirebaseExtensions.swift */,
+				63E4700523CA926F0040E5CE /* FirebaseErrors.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -350,11 +356,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E4700623CA926F0040E5CE /* FirebaseErrors.swift in Sources */,
 				63E46FFF23CA56BA0040E5CE /* GenericDecoder.swift in Sources */,
 				63E46FE723C94EFD0040E5CE /* InputViewController.swift in Sources */,
 				63E46FEA23C94F530040E5CE /* ReusableAlerts.swift in Sources */,
 				63E46FF823CA4F3D0040E5CE /* FirebaseManager.swift in Sources */,
 				63E46FF323CA17F40040E5CE /* Animations.swift in Sources */,
+				63E4700423CA8E070040E5CE /* Food.swift in Sources */,
 				63E46FFA23CA4F4E0040E5CE /* FirebaseExtensions.swift in Sources */,
 				63E46FFC23CA50CF0040E5CE /* User.swift in Sources */,
 				63E46FF023C954490040E5CE /* SetLimitViewController.swift in Sources */,
