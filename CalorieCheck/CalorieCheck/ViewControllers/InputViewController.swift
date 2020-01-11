@@ -20,15 +20,10 @@ class InputViewController: UIViewController {
     }
     
     @IBAction func setLimitButtonTapped(_ sender: Any) {
-        presentSetLimitPopup()
+        Segues.presentSetLimitPopup(vc: self)
     }
     
-    func presentSetLimitPopup() {
-        let storyboard = UIStoryboard(name: "Popups", bundle: nil).instantiateViewController(withIdentifier: "SetLimit")
-        storyboard.modalPresentationStyle = .overFullScreen
-        storyboard.modalTransitionStyle = .crossDissolve
-        self.present(storyboard, animated: true)
-    }
+    
 }
 
 
