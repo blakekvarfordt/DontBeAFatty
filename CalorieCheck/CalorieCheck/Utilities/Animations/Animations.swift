@@ -15,10 +15,7 @@ class Animations {
             var animatingView = view.frame
           animatingView.origin.y -= height
           view.frame = animatingView
-            
-        }, completion: { finished in
-          print("Napkins opened!")
-        })
+        }, completion: nil)
     }
     
     static func transitionDownwards(view: UIView, height: CGFloat) {
@@ -26,11 +23,7 @@ class Animations {
             var animatingView = view.frame
           animatingView.origin.y += height
           view.frame = animatingView
-            
-        }, completion: { finished in
-          print("Napkins opened!")
-        })
+        }, completion: nil)
     }
-
 }
 

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ECA53D9DD0112AF52767826 /* Pods_CalorieCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 383E97EBDCBF5F072A2870BE /* Pods_CalorieCheck.framework */; };
 		63E46FC923C945BE0040E5CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FC823C945BE0040E5CE /* AppDelegate.swift */; };
 		63E46FCB23C945BE0040E5CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FCA23C945BE0040E5CE /* SceneDelegate.swift */; };
 		63E46FD023C945BE0040E5CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E46FCE23C945BE0040E5CE /* Main.storyboard */; };
@@ -17,10 +18,14 @@
 		63E46FEA23C94F530040E5CE /* ReusableAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FE923C94F530040E5CE /* ReusableAlerts.swift */; };
 		63E46FF023C954490040E5CE /* SetLimitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FEF23C954490040E5CE /* SetLimitViewController.swift */; };
 		63E46FF323CA17F40040E5CE /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FF223CA17F40040E5CE /* Animations.swift */; };
+		63E46FF523CA368C0040E5CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63E46FF423CA368C0040E5CE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63E46FC523C945BE0040E5CE /* CalorieCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalorieCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BE9F93084F101C532778A3 /* Pods-CalorieCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCheck.debug.xcconfig"; path = "Target Support Files/Pods-CalorieCheck/Pods-CalorieCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		383E97EBDCBF5F072A2870BE /* Pods_CalorieCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4317FA2C8E515AE43823D87B /* Pods-CalorieCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCheck.release.xcconfig"; path = "Target Support Files/Pods-CalorieCheck/Pods-CalorieCheck.release.xcconfig"; sourceTree = "<group>"; };
+		63E46FC523C945BE0040E5CE /* Dont Be Fat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dont Be Fat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E46FC823C945BE0040E5CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E46FCA23C945BE0040E5CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		63E46FCF23C945BE0040E5CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		63E46FE923C94F530040E5CE /* ReusableAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableAlerts.swift; sourceTree = "<group>"; };
 		63E46FEF23C954490040E5CE /* SetLimitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLimitViewController.swift; sourceTree = "<group>"; };
 		63E46FF223CA17F40040E5CE /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		63E46FF423CA368C0040E5CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,24 +45,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ECA53D9DD0112AF52767826 /* Pods_CalorieCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36B9052F13AFD3562A403E3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05BE9F93084F101C532778A3 /* Pods-CalorieCheck.debug.xcconfig */,
+				4317FA2C8E515AE43823D87B /* Pods-CalorieCheck.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		63E46FBC23C945BE0040E5CE = {
 			isa = PBXGroup;
 			children = (
 				63E46FC723C945BE0040E5CE /* CalorieCheck */,
 				63E46FC623C945BE0040E5CE /* Products */,
+				36B9052F13AFD3562A403E3B /* Pods */,
+				7B98AEFA74965C254C93F2D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		63E46FC623C945BE0040E5CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63E46FC523C945BE0040E5CE /* CalorieCheck.app */,
+				63E46FC523C945BE0040E5CE /* Dont Be Fat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +90,7 @@
 				63E46FDD23C946D50040E5CE /* Storyboards */,
 				63E46FDC23C9461E0040E5CE /* Resources */,
 				63E46FD623C945C00040E5CE /* Info.plist */,
+				63E46FF423CA368C0040E5CE /* GoogleService-Info.plist */,
 			);
 			path = CalorieCheck;
 			sourceTree = "<group>";
@@ -167,6 +186,14 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		7B98AEFA74965C254C93F2D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				383E97EBDCBF5F072A2870BE /* Pods_CalorieCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63E46FD923C945C00040E5CE /* Build configuration list for PBXNativeTarget "CalorieCheck" */;
 			buildPhases = (
+				144822B611A6B6F26021D961 /* [CP] Check Pods Manifest.lock */,
 				63E46FC123C945BE0040E5CE /* Sources */,
 				63E46FC223C945BE0040E5CE /* Frameworks */,
 				63E46FC323C945BE0040E5CE /* Resources */,
+				B3310710F271275C9367679E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,7 +213,7 @@
 			);
 			name = CalorieCheck;
 			productName = CalorieCheck;
-			productReference = 63E46FC523C945BE0040E5CE /* CalorieCheck.app */;
+			productReference = 63E46FC523C945BE0040E5CE /* Dont Be Fat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -227,12 +256,55 @@
 			files = (
 				63E46FD523C945C00040E5CE /* LaunchScreen.storyboard in Resources */,
 				63E46FD223C945C00040E5CE /* Assets.xcassets in Resources */,
+				63E46FF523CA368C0040E5CE /* GoogleService-Info.plist in Resources */,
 				63E46FD023C945BE0040E5CE /* Main.storyboard in Resources */,
 				63E46FE523C94C490040E5CE /* Popups.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		144822B611A6B6F26021D961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalorieCheck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3310710F271275C9367679E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalorieCheck/Pods-CalorieCheck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalorieCheck/Pods-CalorieCheck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalorieCheck/Pods-CalorieCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63E46FC123C945BE0040E5CE /* Sources */ = {
@@ -386,6 +458,7 @@
 		};
 		63E46FDA23C945C00040E5CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05BE9F93084F101C532778A3 /* Pods-CalorieCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,7 +469,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blakekvarfordt.CalorieCheck;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dont Be Fat";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -404,6 +477,7 @@
 		};
 		63E46FDB23C945C00040E5CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4317FA2C8E515AE43823D87B /* Pods-CalorieCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -414,7 +488,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blakekvarfordt.CalorieCheck;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dont Be Fat";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
