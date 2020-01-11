@@ -22,6 +22,7 @@
 		63E46FF823CA4F3D0040E5CE /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FF723CA4F3D0040E5CE /* FirebaseManager.swift */; };
 		63E46FFA23CA4F4E0040E5CE /* FirebaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FF923CA4F4E0040E5CE /* FirebaseExtensions.swift */; };
 		63E46FFC23CA50CF0040E5CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FFB23CA50CF0040E5CE /* User.swift */; };
+		63E46FFF23CA56BA0040E5CE /* GenericDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FFE23CA56BA0040E5CE /* GenericDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		63E46FF723CA4F3D0040E5CE /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		63E46FF923CA4F4E0040E5CE /* FirebaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseExtensions.swift; sourceTree = "<group>"; };
 		63E46FFB23CA50CF0040E5CE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		63E46FFE23CA56BA0040E5CE /* GenericDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		63E46FEB23C94FCE0040E5CE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				63E46FFD23CA56650040E5CE /* Protocols */,
 				63E46FF123CA17D50040E5CE /* Animations */,
 				63E46FE823C94F350040E5CE /* Alerts */,
 			);
@@ -201,6 +204,14 @@
 				63E46FF923CA4F4E0040E5CE /* FirebaseExtensions.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		63E46FFD23CA56650040E5CE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				63E46FFE23CA56BA0040E5CE /* GenericDecoder.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		7B98AEFA74965C254C93F2D5 /* Frameworks */ = {
@@ -328,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E46FFF23CA56BA0040E5CE /* GenericDecoder.swift in Sources */,
 				63E46FE723C94EFD0040E5CE /* InputViewController.swift in Sources */,
 				63E46FEA23C94F530040E5CE /* ReusableAlerts.swift in Sources */,
 				63E46FF823CA4F3D0040E5CE /* FirebaseManager.swift in Sources */,

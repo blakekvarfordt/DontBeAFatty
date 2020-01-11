@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct User: Codable {
+struct User: Codable, CodableObject {
+    typealias GenericObject = User
     var name: String
     var calorieLimit: Int
     var passedLimit: Bool
