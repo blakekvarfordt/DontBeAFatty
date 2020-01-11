@@ -35,4 +35,15 @@ struct FirebaseManager {
                }
            }
        }
+    
+    static func deleteUser(uid: String, completion: @escaping (Bool) -> Void) {
+        db.users.document(uid).delete() { err in
+            if let err = err {
+                print(err)
+                completion(false)
+            } else {
+                completion(true)
+            }
+        }
+    }
 }
