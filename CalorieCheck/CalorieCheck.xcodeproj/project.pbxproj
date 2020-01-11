@@ -19,6 +19,9 @@
 		63E46FF023C954490040E5CE /* SetLimitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FEF23C954490040E5CE /* SetLimitViewController.swift */; };
 		63E46FF323CA17F40040E5CE /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FF223CA17F40040E5CE /* Animations.swift */; };
 		63E46FF523CA368C0040E5CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63E46FF423CA368C0040E5CE /* GoogleService-Info.plist */; };
+		63E46FF823CA4F3D0040E5CE /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FF723CA4F3D0040E5CE /* FirebaseManager.swift */; };
+		63E46FFA23CA4F4E0040E5CE /* FirebaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FF923CA4F4E0040E5CE /* FirebaseExtensions.swift */; };
+		63E46FFC23CA50CF0040E5CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FFB23CA50CF0040E5CE /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		63E46FEF23C954490040E5CE /* SetLimitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLimitViewController.swift; sourceTree = "<group>"; };
 		63E46FF223CA17F40040E5CE /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		63E46FF423CA368C0040E5CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63E46FF723CA4F3D0040E5CE /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		63E46FF923CA4F4E0040E5CE /* FirebaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseExtensions.swift; sourceTree = "<group>"; };
+		63E46FFB23CA50CF0040E5CE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 		63E46FE023C947210040E5CE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				63E46FFB23CA50CF0040E5CE /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +197,8 @@
 		63E46FF623CA4D180040E5CE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				63E46FF723CA4F3D0040E5CE /* FirebaseManager.swift */,
+				63E46FF923CA4F4E0040E5CE /* FirebaseExtensions.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -321,7 +330,10 @@
 			files = (
 				63E46FE723C94EFD0040E5CE /* InputViewController.swift in Sources */,
 				63E46FEA23C94F530040E5CE /* ReusableAlerts.swift in Sources */,
+				63E46FF823CA4F3D0040E5CE /* FirebaseManager.swift in Sources */,
 				63E46FF323CA17F40040E5CE /* Animations.swift in Sources */,
+				63E46FFA23CA4F4E0040E5CE /* FirebaseExtensions.swift in Sources */,
+				63E46FFC23CA50CF0040E5CE /* User.swift in Sources */,
 				63E46FF023C954490040E5CE /* SetLimitViewController.swift in Sources */,
 				63E46FC923C945BE0040E5CE /* AppDelegate.swift in Sources */,
 				63E46FCB23C945BE0040E5CE /* SceneDelegate.swift in Sources */,
