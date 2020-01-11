@@ -82,6 +82,7 @@
 		63E46FC723C945BE0040E5CE /* CalorieCheck */ = {
 			isa = PBXGroup;
 			children = (
+				63E46FF623CA4D180040E5CE /* Service */,
 				63E46FEB23C94FCE0040E5CE /* Utilities */,
 				63E46FE023C947210040E5CE /* Models */,
 				63E46FDF23C947180040E5CE /* ModelControllers */,
@@ -184,6 +185,13 @@
 				63E46FF223CA17F40040E5CE /* Animations.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		63E46FF623CA4D180040E5CE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		7B98AEFA74965C254C93F2D5 /* Frameworks */ = {
