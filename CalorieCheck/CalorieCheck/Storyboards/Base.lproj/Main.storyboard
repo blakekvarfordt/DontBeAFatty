@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eYc-DR-P2Q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Input View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InputViewController" customModule="CalorieCheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abs" translatesAutoresizingMaskIntoConstraints="NO" id="UxH-Rt-aou">
+                                <rect key="frame" x="0.0" y="27" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azc-yW-9eP">
+                                <rect key="frame" x="0.0" y="27" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8b1-Bz-5jE">
+                                        <rect key="frame" x="41.5" y="299" width="331" height="298"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What did you eat?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLV-DT-gyj">
+                                                <rect key="frame" x="37.5" y="0.0" width="256.5" height="62.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apple" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="MGo-Oa-bu5">
+                                                <rect key="frame" x="0.0" y="78.5" width="331" height="62.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.63663848460000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" smartDashesType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qY3-Ge-jnM"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of Calories?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-rd-wM6">
+                                                <rect key="frame" x="67" y="157" width="197" height="62.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="125" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="gxf-Uc-BzD">
+                                                <rect key="frame" x="82.5" y="235.5" width="166" height="62.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.63663848460000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ieR-qG-J2H"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gxf-Uc-BzD" firstAttribute="centerX" secondItem="8b1-Bz-5jE" secondAttribute="centerX" id="C9t-0t-tMT"/>
+                                            <constraint firstItem="MGo-Oa-bu5" firstAttribute="width" secondItem="8b1-Bz-5jE" secondAttribute="width" id="dEm-8J-XOE"/>
+                                            <constraint firstItem="gxf-Uc-BzD" firstAttribute="width" secondItem="8b1-Bz-5jE" secondAttribute="width" multiplier="0.5" id="pzJ-sY-IBe"/>
+                                            <constraint firstItem="MGo-Oa-bu5" firstAttribute="centerX" secondItem="8b1-Bz-5jE" secondAttribute="centerX" id="y52-mN-qy7"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-mI-3Jj">
+                                        <rect key="frame" x="0.0" y="206" width="414" height="43"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.57884738869863017" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8b1-Bz-5jE" firstAttribute="height" secondItem="Azc-yW-9eP" secondAttribute="height" multiplier="0.332589" id="AEn-fI-ce0"/>
+                                    <constraint firstItem="VbC-mI-3Jj" firstAttribute="centerX" secondItem="Azc-yW-9eP" secondAttribute="centerX" id="Cit-ai-3eR"/>
+                                    <constraint firstItem="8b1-Bz-5jE" firstAttribute="width" secondItem="Azc-yW-9eP" secondAttribute="width" multiplier="0.8" id="Ggb-5R-NCu"/>
+                                    <constraint firstItem="VbC-mI-3Jj" firstAttribute="width" secondItem="Azc-yW-9eP" secondAttribute="width" id="NJx-vV-o3G"/>
+                                    <constraint firstItem="8b1-Bz-5jE" firstAttribute="top" secondItem="VbC-mI-3Jj" secondAttribute="bottom" constant="50" id="Qb0-mS-HYf"/>
+                                    <constraint firstItem="8b1-Bz-5jE" firstAttribute="centerY" secondItem="Azc-yW-9eP" secondAttribute="centerY" id="T42-b1-Bb0"/>
+                                    <constraint firstItem="8b1-Bz-5jE" firstAttribute="centerX" secondItem="Azc-yW-9eP" secondAttribute="centerX" id="wg4-QF-DdT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UxH-Rt-aou" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="0ba-X0-rTO"/>
+                            <constraint firstItem="Azc-yW-9eP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="3bC-hA-HI5"/>
+                            <constraint firstItem="UxH-Rt-aou" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Boo-Ky-tiv"/>
+                            <constraint firstItem="Azc-yW-9eP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ewr-qq-OON"/>
+                            <constraint firstItem="UxH-Rt-aou" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="F7c-q1-ffz"/>
+                            <constraint firstItem="UxH-Rt-aou" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VwY-bU-Rb9"/>
+                            <constraint firstItem="Azc-yW-9eP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="dAZ-m1-MKb"/>
+                            <constraint firstItem="Azc-yW-9eP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="od3-9B-N3H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TKR-Xt-lLW">
+                        <barButtonItem key="rightBarButtonItem" title="Set Limit" id="B5l-1y-vip">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="setLimitButtonTapped:" destination="BYZ-38-t0r" id="dNW-ei-hoW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="caloriesLeftLabel" destination="VbC-mI-3Jj" id="caW-S3-Xun"/>
+                        <outlet property="inputStackView" destination="8b1-Bz-5jE" id="GF6-HH-2wM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f6j-JJ-sTy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eYc-DR-P2Q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xn6-eA-1P8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QSD-Rf-lmL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cal-U9-yc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="abs" width="1506" height="1920"/>
+    </resources>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dPC-DH-hdO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set Limit View Controller-->
+        <scene sceneID="eHU-LG-9Q2">
+            <objects>
+                <viewController id="azC-lA-fNu" customClass="SetLimitViewController" customModule="CalorieCheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="whU-i8-Dnu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Set Limit" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="7cs-LL-ZhW">
+                                <rect key="frame" x="52" y="446" width="310.5" height="58.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.6677547089041096" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                                <connections>
+                                    <outlet property="delegate" destination="azC-lA-fNu" id="9Uq-TG-K5l"/>
+                                </connections>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="xks-6k-E4M">
+                                <rect key="frame" x="93.5" y="188" width="227.5" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male Average: 2300" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edm-8t-VoS">
+                                        <rect key="frame" x="0.0" y="0.0" width="227.5" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female Average: 1800" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vc-ZB-esd">
+                                        <rect key="frame" x="0.0" y="45.5" width="227.5" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xks-6k-E4M" firstAttribute="top" secondItem="fKL-1m-kuz" secondAttribute="top" constant="100" id="4ga-cf-oPy"/>
+                            <constraint firstItem="xks-6k-E4M" firstAttribute="centerX" secondItem="fKL-1m-kuz" secondAttribute="centerX" id="AAG-fO-Zz5"/>
+                            <constraint firstItem="7cs-LL-ZhW" firstAttribute="centerY" secondItem="fKL-1m-kuz" secondAttribute="centerY" id="lz7-v8-H0R"/>
+                            <constraint firstItem="xks-6k-E4M" firstAttribute="width" secondItem="fKL-1m-kuz" secondAttribute="width" multiplier="0.549517" id="qXL-ZH-Y1X"/>
+                            <constraint firstItem="7cs-LL-ZhW" firstAttribute="centerX" secondItem="fKL-1m-kuz" secondAttribute="centerX" id="tJh-Hq-wsH"/>
+                            <constraint firstItem="7cs-LL-ZhW" firstAttribute="width" secondItem="fKL-1m-kuz" secondAttribute="width" multiplier="0.75" id="xXF-3U-krt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fKL-1m-kuz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZOw-dC-ScQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="pyf-yU-nYT">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="azC-lA-fNu" id="rM0-u8-tBK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="setLimitTextField" destination="7cs-LL-ZhW" id="unC-p0-Fgm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enr-gt-brL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="101.78571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uzg-km-LTK">
+            <objects>
+                <navigationController storyboardIdentifier="SetLimit" automaticallyAdjustsScrollViewInsets="NO" id="dPC-DH-hdO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mBc-A2-ouz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.63663848460000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="azC-lA-fNu" kind="relationship" relationship="rootViewController" id="jYS-xo-yOT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rs-RL-SBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+</document>
