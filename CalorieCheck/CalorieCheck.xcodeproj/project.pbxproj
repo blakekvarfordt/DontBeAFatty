@@ -221,9 +221,7 @@
 		63E46FF623CA4D180040E5CE /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				63E46FF723CA4F3D0040E5CE /* FirebaseManager.swift */,
-				63E46FF923CA4F4E0040E5CE /* FirebaseExtensions.swift */,
-				63E4700523CA926F0040E5CE /* FirebaseErrors.swift */,
+				63E4701323CAF2DB0040E5CE /* Firebase */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -252,6 +250,16 @@
 				63E4701123CACE780040E5CE /* ViewDesignable.swift */,
 			);
 			path = Designables;
+			sourceTree = "<group>";
+		};
+		63E4701323CAF2DB0040E5CE /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				63E46FF723CA4F3D0040E5CE /* FirebaseManager.swift */,
+				63E46FF923CA4F4E0040E5CE /* FirebaseExtensions.swift */,
+				63E4700523CA926F0040E5CE /* FirebaseErrors.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		7B98AEFA74965C254C93F2D5 /* Frameworks */ = {
