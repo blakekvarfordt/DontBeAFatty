@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abs" translatesAutoresizingMaskIntoConstraints="NO" id="UxH-Rt-aou">
-                                <rect key="frame" x="0.0" y="27" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="27" width="414.00000000000023" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azc-yW-9eP">
                                 <rect key="frame" x="0.0" y="27" width="414" height="896"/>
@@ -25,13 +25,13 @@
                                         <rect key="frame" x="41.5" y="299" width="331" height="298"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What did you eat?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLV-DT-gyj">
-                                                <rect key="frame" x="37.5" y="0.0" width="256.5" height="62.5"/>
+                                                <rect key="frame" x="37.5" y="0.0" width="256.5" height="47"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apple" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="MGo-Oa-bu5">
-                                                <rect key="frame" x="0.0" y="78.5" width="331" height="62.5"/>
+                                                <rect key="frame" x="0.0" y="63" width="331" height="46.5"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.63663848460000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -41,13 +41,13 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of Calories?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-rd-wM6">
-                                                <rect key="frame" x="67" y="157" width="197" height="62.5"/>
+                                                <rect key="frame" x="67" y="125.5" width="197" height="47"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="125" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="gxf-Uc-BzD">
-                                                <rect key="frame" x="82.5" y="235.5" width="166" height="62.5"/>
+                                                <rect key="frame" x="82.5" y="188.5" width="166" height="46.5"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.63663848460000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
@@ -56,11 +56,34 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="ieR-qG-J2H"/>
                                                 </connections>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouj-Ig-f77" customClass="CustomButton" customModule="Dont_Be_Fat" customModuleProvider="target">
+                                                <rect key="frame" x="99.5" y="251" width="132" height="47"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
+                                                <state key="normal" title="Add">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="gxf-Uc-BzD" firstAttribute="centerX" secondItem="8b1-Bz-5jE" secondAttribute="centerX" id="C9t-0t-tMT"/>
                                             <constraint firstItem="MGo-Oa-bu5" firstAttribute="width" secondItem="8b1-Bz-5jE" secondAttribute="width" id="dEm-8J-XOE"/>
+                                            <constraint firstItem="ouj-Ig-f77" firstAttribute="centerX" secondItem="8b1-Bz-5jE" secondAttribute="centerX" id="gmn-5D-kFc"/>
                                             <constraint firstItem="gxf-Uc-BzD" firstAttribute="width" secondItem="8b1-Bz-5jE" secondAttribute="width" multiplier="0.5" id="pzJ-sY-IBe"/>
+                                            <constraint firstItem="ouj-Ig-f77" firstAttribute="width" secondItem="8b1-Bz-5jE" secondAttribute="width" multiplier="0.4" id="rvJ-rq-1lK"/>
                                             <constraint firstItem="MGo-Oa-bu5" firstAttribute="centerX" secondItem="8b1-Bz-5jE" secondAttribute="centerX" id="y52-mN-qy7"/>
                                         </constraints>
                                     </stackView>
