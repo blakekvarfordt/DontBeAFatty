@@ -28,6 +28,7 @@
 		63E4700623CA926F0040E5CE /* FirebaseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4700523CA926F0040E5CE /* FirebaseErrors.swift */; };
 		63E4700823CA96030040E5CE /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4700723CA96030040E5CE /* UserController.swift */; };
 		63E4700B23CA9CF00040E5CE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4700A23CA9CF00040E5CE /* CustomButton.swift */; };
+		63E4700D23CAA4C50040E5CE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4700C23CAA4C50040E5CE /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		63E4700523CA926F0040E5CE /* FirebaseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseErrors.swift; sourceTree = "<group>"; };
 		63E4700723CA96030040E5CE /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		63E4700A23CA9CF00040E5CE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		63E4700C23CAA4C50040E5CE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				63E4700A23CA9CF00040E5CE /* CustomButton.swift */,
+				63E4700C23CAA4C50040E5CE /* CustomTextField.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				63E46FFF23CA56BA0040E5CE /* GenericDecoder.swift in Sources */,
 				63E46FE723C94EFD0040E5CE /* InputViewController.swift in Sources */,
 				63E46FEA23C94F530040E5CE /* ReusableAlerts.swift in Sources */,
+				63E4700D23CAA4C50040E5CE /* CustomTextField.swift in Sources */,
 				63E4700823CA96030040E5CE /* UserController.swift in Sources */,
 				63E46FF823CA4F3D0040E5CE /* FirebaseManager.swift in Sources */,
 				63E46FF323CA17F40040E5CE /* Animations.swift in Sources */,
