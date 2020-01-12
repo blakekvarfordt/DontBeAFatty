@@ -165,6 +165,7 @@
 		63E46FE123C9472D0040E5CE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				63E4700E23CAAA870040E5CE /* Designables */,
 				63E46FE323C948C30040E5CE /* Cells */,
 				63E46FE223C948BB0040E5CE /* TextFields */,
 			);
@@ -181,8 +182,6 @@
 		63E46FE323C948C30040E5CE /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				63E4700A23CA9CF00040E5CE /* ButtonDesignable.swift */,
-				63E4700C23CAA4C50040E5CE /* TextFieldDesignable.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -238,6 +237,15 @@
 				63E4700123CA5FD60040E5CE /* Segues.swift */,
 			);
 			path = Segues;
+			sourceTree = "<group>";
+		};
+		63E4700E23CAAA870040E5CE /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				63E4700A23CA9CF00040E5CE /* ButtonDesignable.swift */,
+				63E4700C23CAA4C50040E5CE /* TextFieldDesignable.swift */,
+			);
+			path = Designables;
 			sourceTree = "<group>";
 		};
 		7B98AEFA74965C254C93F2D5 /* Frameworks */ = {

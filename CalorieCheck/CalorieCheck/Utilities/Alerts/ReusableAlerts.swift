@@ -27,4 +27,13 @@ class ResusableAlerts {
         alertController.addAction(no)
         vc.present(alertController, animated: true)
     }
+    
+    static func missingFields(vc: UIViewController) {
+        let alert = UIAlertController(title: "Missing Fields", message: "One or more fields is blank. Try again", preferredStyle: .alert)
+        
+        let ok = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(ok)
+        vc.present(alert, animated: true)
+    }
 }
