@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oun-dF-jhX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -7,19 +7,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="KxT-Jc-7a4">
             <objects>
-                <viewController id="oun-dF-jhX" sceneMemberID="viewController">
+                <viewController id="oun-dF-jhX" customClass="LoginViewController" customModule="Dont_Be_Fat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WMU-5z-bIE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abs" translatesAutoresizingMaskIntoConstraints="NO" id="w2J-ks-ATD">
-                                <rect key="frame" x="0.0" y="44" width="414" height="853"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="897"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Svp-0Z-BUz" customClass="ViewDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
@@ -38,6 +38,9 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1Q-9i-Hlp" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
@@ -47,6 +50,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -75,17 +81,17 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="w2J-ks-ATD" firstAttribute="height" secondItem="q6b-2x-icm" secondAttribute="height" constant="35" id="DM8-k9-Np9"/>
+                            <constraint firstItem="w2J-ks-ATD" firstAttribute="height" secondItem="q6b-2x-icm" secondAttribute="height" constant="79" id="DM8-k9-Np9"/>
                             <constraint firstItem="T3B-1G-Vpy" firstAttribute="centerX" secondItem="q6b-2x-icm" secondAttribute="centerX" id="FOG-iY-ffX"/>
                             <constraint firstItem="w2J-ks-ATD" firstAttribute="width" secondItem="q6b-2x-icm" secondAttribute="width" id="HW7-cR-qbs"/>
                             <constraint firstItem="T3B-1G-Vpy" firstAttribute="width" secondItem="q6b-2x-icm" secondAttribute="width" multiplier="0.6" id="Hh9-hM-uRb"/>
                             <constraint firstItem="Svp-0Z-BUz" firstAttribute="centerX" secondItem="q6b-2x-icm" secondAttribute="centerX" id="PV8-re-T7f"/>
                             <constraint firstItem="w2J-ks-ATD" firstAttribute="centerX" secondItem="q6b-2x-icm" secondAttribute="centerX" id="b4x-eC-f2K"/>
                             <constraint firstItem="T3B-1G-Vpy" firstAttribute="centerY" secondItem="q6b-2x-icm" secondAttribute="centerY" id="cHY-B7-8Co"/>
-                            <constraint firstItem="Svp-0Z-BUz" firstAttribute="centerY" secondItem="q6b-2x-icm" secondAttribute="centerY" constant="17" id="crq-7G-EHH"/>
-                            <constraint firstItem="w2J-ks-ATD" firstAttribute="centerY" secondItem="q6b-2x-icm" secondAttribute="centerY" constant="17.5" id="gs0-sa-7Wu"/>
+                            <constraint firstItem="Svp-0Z-BUz" firstAttribute="centerY" secondItem="q6b-2x-icm" secondAttribute="centerY" constant="-5" id="crq-7G-EHH"/>
+                            <constraint firstItem="w2J-ks-ATD" firstAttribute="centerY" secondItem="q6b-2x-icm" secondAttribute="centerY" constant="-4.5" id="gs0-sa-7Wu"/>
                             <constraint firstItem="Svp-0Z-BUz" firstAttribute="width" secondItem="q6b-2x-icm" secondAttribute="width" id="kyz-3b-fOU"/>
-                            <constraint firstItem="Svp-0Z-BUz" firstAttribute="height" secondItem="q6b-2x-icm" secondAttribute="height" constant="34" id="lRR-Sh-PHR"/>
+                            <constraint firstItem="Svp-0Z-BUz" firstAttribute="height" secondItem="q6b-2x-icm" secondAttribute="height" constant="78" id="lRR-Sh-PHR"/>
                             <constraint firstItem="T3B-1G-Vpy" firstAttribute="height" secondItem="q6b-2x-icm" secondAttribute="height" multiplier="0.3" id="lrc-YI-MwT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q6b-2x-icm"/>

@@ -26,7 +26,7 @@ class TextFieldDesignable: UITextField {
     @IBInspectable var color: UIColor = .green {
         didSet {
             self.backgroundColor = color
-            alpha = 1.0
+            alpha = 0.6
         }
     }
     
