@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class CustomTextField: UITextField {
+class TextFieldDesignable: UITextField {
     
     @IBInspectable var cornerRadius: CGFloat = 5.0 {
         didSet {
