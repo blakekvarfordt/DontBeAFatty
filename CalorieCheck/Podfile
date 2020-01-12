@@ -8,5 +8,5 @@ target 'CalorieCheck' do
   # Pods for CalorieCheck
 pod 'Firebase/Analytics'
 pod 'FirebaseFirestore'
-
+pod 'Firebase/Auth'
 end
