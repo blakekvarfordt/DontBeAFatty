@@ -8,12 +8,27 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseAuth
 
 struct FirebaseManager {
     
+    /// Database
     private static let db = Firestore.firestore()
     
-    /// Create user
+    /// Authenticates a user in the database
+    static func authenticateAndCreateUser(email: String, password: String, userData: [String : Any], firebaseID: String, completion: @escaping (Result<Bool, Error>) -> ()) {
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+            if let error = error {
+                completion(.failure(error))
+                print(FirebaseErrors.FailedCreation)
+            } else {
+                completion(.success(true))
+            }
+        }
+    }
+    
+    /// Creates a User collection with things NOT pertaining to login info
     static func createUser(userData: [String : Any], firebaseID: String, completion: @escaping (Result<Bool, Error>) -> ()) {
         
         db.users.document(firebaseID).setData(userData, merge: true) { (error) in
