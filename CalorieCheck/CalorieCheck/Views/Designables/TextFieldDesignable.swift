@@ -23,4 +23,15 @@ class TextFieldDesignable: UITextField {
         }
     }
     
+    @IBInspectable var color: UIColor = .green {
+        didSet {
+            self.backgroundColor = color
+            alpha = 1.0
+        }
+    }
+    
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+    }
+    
 }
