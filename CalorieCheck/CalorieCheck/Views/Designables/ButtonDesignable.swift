@@ -30,10 +30,6 @@ class ButtonDesignable: UIButton {
            }
        }
     
-    @IBInspectable var width: CGFloat {
-        self.frame.width
-    }
-    
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
     }
