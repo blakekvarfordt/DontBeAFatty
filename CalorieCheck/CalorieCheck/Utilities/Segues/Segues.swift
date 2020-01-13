@@ -17,9 +17,4 @@ class Segues {
         vc.present(storyboard, animated: true)
     }
 }
-struct SegueConstants {
-    static let login = "LoginViewController"
-    static let input = "InputViewController"
-    static let loading = "LoadingViewController"
-    static let setLimit = "SetLimitViewController"
-}
+

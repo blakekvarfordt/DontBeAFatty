@@ -16,12 +16,15 @@ class LoadingViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        stateListener()
+    }
+    
+    func stateListener() {
         FirebaseManager.addStateListener(vc: self) { (success) in
             if success {
-                
+                Segues.presentViewController(vc: self, name: SegueConstants.main, id: SegueConstants.input)
             } else {
-                
+                Segues.presentViewController(vc: self, name: SegueConstants.main, id: SegueConstants.login)
             }
         }
     }

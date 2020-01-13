@@ -32,6 +32,7 @@
 		63E4701223CACE780040E5CE /* ViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4701123CACE780040E5CE /* ViewDesignable.swift */; };
 		63E4701623CBDB0E0040E5CE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4701523CBDB0E0040E5CE /* LoginViewController.swift */; };
 		63E4702123CBFA000040E5CE /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4702023CBFA000040E5CE /* LoadingViewController.swift */; };
+		63E4702323CC11760040E5CE /* SegueConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4702223CC11760040E5CE /* SegueConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		63E4701123CACE780040E5CE /* ViewDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDesignable.swift; sourceTree = "<group>"; };
 		63E4701523CBDB0E0040E5CE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		63E4702023CBFA000040E5CE /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		63E4702223CC11760040E5CE /* SegueConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				63E4700123CA5FD60040E5CE /* Segues.swift */,
+				63E4702223CC11760040E5CE /* SegueConstants.swift */,
 			);
 			path = Segues;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				63E4700D23CAA4C50040E5CE /* TextFieldDesignable.swift in Sources */,
 				63E4700823CA96030040E5CE /* UserController.swift in Sources */,
 				63E46FF823CA4F3D0040E5CE /* FirebaseManager.swift in Sources */,
+				63E4702323CC11760040E5CE /* SegueConstants.swift in Sources */,
 				63E46FF323CA17F40040E5CE /* Animations.swift in Sources */,
 				63E4700423CA8E070040E5CE /* Food.swift in Sources */,
 				63E4702123CBFA000040E5CE /* LoadingViewController.swift in Sources */,
