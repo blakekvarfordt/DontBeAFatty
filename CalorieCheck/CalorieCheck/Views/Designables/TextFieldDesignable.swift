@@ -27,6 +27,7 @@ class TextFieldDesignable: UITextField {
         didSet {
             self.backgroundColor = color
             alpha = 0.6
+            textColor = .white
         }
     }
     

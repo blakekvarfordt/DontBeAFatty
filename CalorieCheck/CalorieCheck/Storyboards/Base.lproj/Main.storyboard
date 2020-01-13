@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abs" translatesAutoresizingMaskIntoConstraints="NO" id="UxH-Rt-aou">
-                                <rect key="frame" x="0.0" y="27" width="414.00000000000023" height="896"/>
+                                <rect key="frame" x="0.0" y="27" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azc-yW-9eP" customClass="ViewDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="27" width="414" height="896"/>
@@ -157,7 +157,7 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Register-->
         <scene sceneID="0OK-xh-Kay">
             <objects>
                 <viewController id="kMv-IZ-5Ak" customClass="LoginViewController" customModule="Dont_Be_Fat" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abs" translatesAutoresizingMaskIntoConstraints="NO" id="0We-03-MVJ">
-                                <rect key="frame" x="0.0" y="44" width="414.00000000000023" height="853"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="853"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjt-rq-qdz" customClass="ViewDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
@@ -198,6 +198,9 @@
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="kMv-IZ-5Ak" id="IcY-vM-Vbb"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-qO-wgx">
                                         <rect key="frame" x="0.0" y="112" width="248" height="51"/>
@@ -217,6 +220,9 @@
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="kMv-IZ-5Ak" id="D86-7i-SlU"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQD-7L-Upd">
                                         <rect key="frame" x="0.0" y="224" width="248" height="51"/>
@@ -233,6 +239,9 @@
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="kMv-IZ-5Ak" id="X3Y-K0-ClI"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-OM-klS" customClass="ButtonDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="336" width="248" height="51"/>
@@ -292,10 +301,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ewN-gV-JXo"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kLY-1A-GVQ"/>
+                    <navigationItem key="navigationItem" title="Register" id="kLY-1A-GVQ"/>
                     <connections>
                         <outlet property="emailTextField" destination="Hq1-bs-CvZ" id="BDL-Qr-f72"/>
                         <outlet property="passwordTextField" destination="yZ7-I4-c9a" id="tuh-hv-Hgh"/>
+                        <outlet property="stackView" destination="gUw-4J-Pur" id="mBM-cV-Qqb"/>
                         <outlet property="usernameTextField" destination="pkl-ZR-8aQ" id="Tb2-DJ-Gdm"/>
                     </connections>
                 </viewController>

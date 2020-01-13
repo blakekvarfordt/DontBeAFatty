@@ -14,14 +14,15 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: TextFieldDesignable!
     @IBOutlet weak var passwordTextField: TextFieldDesignable!
     @IBOutlet weak var usernameTextField: TextFieldDesignable!
+    @IBOutlet weak var stackView: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
 
     @IBAction func registerButtonTapped(_ sender: Any) {
+        
     }
     
     
@@ -48,6 +49,13 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
+}
 
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        Animations.transitionUpwards(view: stackView, height: 120)
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        Animations.transitionDownwards(view: stackView, height: 120)
+    }
 }
