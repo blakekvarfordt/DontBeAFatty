@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eYc-DR-P2Q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mTa-GJ-tdS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -157,6 +157,101 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="0OK-xh-Kay">
+            <objects>
+                <viewController id="kMv-IZ-5Ak" customClass="LoginViewController" customModule="Dont_Be_Fat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="igf-dd-Ydi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abs" translatesAutoresizingMaskIntoConstraints="NO" id="0We-03-MVJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="853"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjt-rq-qdz" customClass="ViewDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="gUw-4J-Pur">
+                                <rect key="frame" x="83" y="359" width="248" height="232"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-bs-CvZ" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="248" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZ7-I4-c9a" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="94" width="248" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-OM-klS" customClass="ButtonDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
+                                        <rect key="frame" x="95.5" y="188" width="57" height="44"/>
+                                        <state key="normal" title="Register"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hq1-bs-CvZ" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="14z-4o-04S"/>
+                                    <constraint firstItem="Hq1-bs-CvZ" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="2nk-XE-XVu"/>
+                                    <constraint firstItem="YVc-OM-klS" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="DF7-Eh-xMh"/>
+                                    <constraint firstItem="YVc-OM-klS" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" multiplier="0.229839" id="gHC-u4-upj"/>
+                                    <constraint firstItem="yZ7-I4-c9a" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="pPQ-6n-oXw"/>
+                                    <constraint firstItem="yZ7-I4-c9a" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="zXb-ld-TrS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gUw-4J-Pur" firstAttribute="centerX" secondItem="ewN-gV-JXo" secondAttribute="centerX" id="5Jh-Pi-bsH"/>
+                            <constraint firstItem="gUw-4J-Pur" firstAttribute="width" secondItem="ewN-gV-JXo" secondAttribute="width" multiplier="0.6" id="6dO-Vl-ULy"/>
+                            <constraint firstItem="wjt-rq-qdz" firstAttribute="height" secondItem="ewN-gV-JXo" secondAttribute="height" constant="78" id="JuD-xl-fGO"/>
+                            <constraint firstItem="wjt-rq-qdz" firstAttribute="centerX" secondItem="ewN-gV-JXo" secondAttribute="centerX" id="NxH-w2-ITs"/>
+                            <constraint firstItem="0We-03-MVJ" firstAttribute="height" secondItem="ewN-gV-JXo" secondAttribute="height" constant="79" id="XvT-wX-uQY"/>
+                            <constraint firstItem="0We-03-MVJ" firstAttribute="width" secondItem="ewN-gV-JXo" secondAttribute="width" id="ZCk-al-cdd"/>
+                            <constraint firstItem="0We-03-MVJ" firstAttribute="centerX" secondItem="ewN-gV-JXo" secondAttribute="centerX" id="ckL-Zq-iUt"/>
+                            <constraint firstItem="0We-03-MVJ" firstAttribute="centerY" secondItem="ewN-gV-JXo" secondAttribute="centerY" constant="-4.5" id="f8F-2I-X4s"/>
+                            <constraint firstItem="gUw-4J-Pur" firstAttribute="centerY" secondItem="ewN-gV-JXo" secondAttribute="centerY" id="fQU-E0-bPo"/>
+                            <constraint firstItem="gUw-4J-Pur" firstAttribute="height" secondItem="ewN-gV-JXo" secondAttribute="height" multiplier="0.3" id="go6-3b-TbY"/>
+                            <constraint firstItem="wjt-rq-qdz" firstAttribute="centerY" secondItem="ewN-gV-JXo" secondAttribute="centerY" constant="-5" id="yFs-VA-DYW"/>
+                            <constraint firstItem="wjt-rq-qdz" firstAttribute="width" secondItem="ewN-gV-JXo" secondAttribute="width" id="z6T-t5-q8m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ewN-gV-JXo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kLY-1A-GVQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fst-vZ-oH4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-771"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="f6j-JJ-sTy">
             <objects>
@@ -175,6 +270,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cal-U9-yc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="xcm-qX-2Gz">
+            <objects>
+                <viewController id="mTa-GJ-tdS" customClass="LoadingViewController" customModule="Dont_Be_Fat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LGp-od-PXS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKY-De-Tbc">
+                                <rect key="frame" x="186" y="442.5" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eKY-De-Tbc" firstAttribute="height" secondItem="tOW-N4-UTC" secondAttribute="height" multiplier="0.0256724" id="6hh-vK-RxS"/>
+                            <constraint firstItem="eKY-De-Tbc" firstAttribute="centerX" secondItem="tOW-N4-UTC" secondAttribute="centerX" constant="14.5" id="J2i-1J-zeN"/>
+                            <constraint firstItem="eKY-De-Tbc" firstAttribute="centerY" secondItem="tOW-N4-UTC" secondAttribute="centerY" id="JmN-I6-4xb"/>
+                            <constraint firstItem="eKY-De-Tbc" firstAttribute="width" secondItem="tOW-N4-UTC" secondAttribute="width" multiplier="0.101449" constant="29" id="yYk-Im-uQ3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tOW-N4-UTC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZ9-87-TED" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-854" y="-328"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1so-01-Kpl">
+            <objects>
+                <navigationController storyboardIdentifier="LoginViewController" automaticallyAdjustsScrollViewInsets="NO" id="DTx-87-Iwj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ggB-QV-P89">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kMv-IZ-5Ak" kind="relationship" relationship="rootViewController" id="LOI-Yp-BKc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJ9-I0-wjW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="-771"/>
         </scene>
     </scenes>
     <resources>

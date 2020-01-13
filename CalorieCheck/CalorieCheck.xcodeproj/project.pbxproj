@@ -29,9 +29,9 @@
 		63E4700823CA96030040E5CE /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4700723CA96030040E5CE /* UserController.swift */; };
 		63E4700B23CA9CF00040E5CE /* ButtonDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4700A23CA9CF00040E5CE /* ButtonDesignable.swift */; };
 		63E4700D23CAA4C50040E5CE /* TextFieldDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4700C23CAA4C50040E5CE /* TextFieldDesignable.swift */; };
-		63E4701023CACA090040E5CE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E4700F23CACA090040E5CE /* Login.storyboard */; };
 		63E4701223CACE780040E5CE /* ViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4701123CACE780040E5CE /* ViewDesignable.swift */; };
 		63E4701623CBDB0E0040E5CE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4701523CBDB0E0040E5CE /* LoginViewController.swift */; };
+		63E4702123CBFA000040E5CE /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4702023CBFA000040E5CE /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,9 +61,9 @@
 		63E4700723CA96030040E5CE /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		63E4700A23CA9CF00040E5CE /* ButtonDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDesignable.swift; sourceTree = "<group>"; };
 		63E4700C23CAA4C50040E5CE /* TextFieldDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDesignable.swift; sourceTree = "<group>"; };
-		63E4700F23CACA090040E5CE /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		63E4701123CACE780040E5CE /* ViewDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDesignable.swift; sourceTree = "<group>"; };
 		63E4701523CBDB0E0040E5CE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		63E4702023CBFA000040E5CE /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,6 @@
 				63E46FCE23C945BE0040E5CE /* Main.storyboard */,
 				63E46FD323C945C00040E5CE /* LaunchScreen.storyboard */,
 				63E46FE423C94C490040E5CE /* Popups.storyboard */,
-				63E4700F23CACA090040E5CE /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -149,6 +148,7 @@
 				63E46FE623C94EFD0040E5CE /* InputViewController.swift */,
 				63E46FEF23C954490040E5CE /* SetLimitViewController.swift */,
 				63E4701523CBDB0E0040E5CE /* LoginViewController.swift */,
+				63E4702023CBFA000040E5CE /* LoadingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -335,7 +335,6 @@
 			files = (
 				63E46FD523C945C00040E5CE /* LaunchScreen.storyboard in Resources */,
 				63E46FD223C945C00040E5CE /* Assets.xcassets in Resources */,
-				63E4701023CACA090040E5CE /* Login.storyboard in Resources */,
 				63E46FF523CA368C0040E5CE /* GoogleService-Info.plist in Resources */,
 				63E46FD023C945BE0040E5CE /* Main.storyboard in Resources */,
 				63E46FE523C94C490040E5CE /* Popups.storyboard in Resources */,
@@ -402,6 +401,7 @@
 				63E46FF823CA4F3D0040E5CE /* FirebaseManager.swift in Sources */,
 				63E46FF323CA17F40040E5CE /* Animations.swift in Sources */,
 				63E4700423CA8E070040E5CE /* Food.swift in Sources */,
+				63E4702123CBFA000040E5CE /* LoadingViewController.swift in Sources */,
 				63E46FFA23CA4F4E0040E5CE /* FirebaseExtensions.swift in Sources */,
 				63E46FFC23CA50CF0040E5CE /* User.swift in Sources */,
 				63E46FF023C954490040E5CE /* SetLimitViewController.swift in Sources */,

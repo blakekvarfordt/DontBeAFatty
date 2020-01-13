@@ -15,4 +15,11 @@ class Segues {
         storyboard.modalTransitionStyle = .crossDissolve
         vc.present(storyboard, animated: true)
     }
+    
+    static func presentLogin(vc: UIViewController) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
+        storyboard.modalPresentationStyle = .overFullScreen
+        storyboard.modalTransitionStyle = .crossDissolve
+        vc.present(storyboard, animated: true, completion: nil)
+    }
 }

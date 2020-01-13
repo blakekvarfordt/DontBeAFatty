@@ -28,6 +28,17 @@ struct FirebaseManager {
         }
     }
     
+    static func addStateListener(vc: UIViewController, completion:
+        @escaping (Bool) -> ()) {
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user == nil {
+                Segues.presentLogin(vc: vc)
+            } else {
+                    completion(true)
+                }
+            }
+        }
+    
     /// Creates a User collection with things NOT pertaining to login info
     static func createUser(userData: [String : Any], firebaseID: String, completion: @escaping (Result<Bool, Error>) -> ()) {
         
@@ -41,15 +52,15 @@ struct FirebaseManager {
     }
     
     /// Fetches the user from firebase
-       static func fetchUser(uid: String, completion: @escaping (Result<[String: Any], Error>) -> Void) {
-           db.users.document(uid).getDocument { (document, error) in
-               if let doc = document?.data(), document?.exists ?? false {
-                   completion(.success(doc))
-               } else {
-                   completion(.failure(FirebaseErrors.NoData))
-               }
-           }
-       }
+    static func fetchUser(uid: String, completion: @escaping (Result<[String: Any], Error>) -> Void) {
+        db.users.document(uid).getDocument { (document, error) in
+            if let doc = document?.data(), document?.exists ?? false {
+                completion(.success(doc))
+            } else {
+                completion(.failure(FirebaseErrors.NoData))
+            }
+        }
+    }
     
     static func deleteUser(uid: String, completion: @escaping (Bool) -> Void) {
         db.users.document(uid).delete() { err in
