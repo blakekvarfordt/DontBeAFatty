@@ -8,9 +8,9 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseAuth
 
 extension Firestore {
     var users: CollectionReference {return collection(User.FirebaseKeys.userKey)}
     var food: CollectionReference {return collection(Food.FirebaseKeys.foodKey)}
 }
-

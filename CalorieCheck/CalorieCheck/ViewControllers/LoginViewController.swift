@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func registerButtonTapped(_ sender: Any) {
-        
+        authenticateUser()
     }
     
     
@@ -41,11 +41,12 @@ class LoginViewController: UIViewController {
     
     func createUser() {
         guard let username = usernameTextField.text,
-            let uid = Auth.auth().currentUser?.uid else { return }
+            let uid = FirebaseManager.userID else { return }
         let user = User(name: username, calorieLimit: 0, firebaseID: uid)
         UserController.shared.createOrUpdateUser(user) { (success) in
             if success {
                 Segues.presentViewController(vc: self, name: SegueConstants.main, id: SegueConstants.input)
+                print("final success creating user!!!")
             }
         }
     }
