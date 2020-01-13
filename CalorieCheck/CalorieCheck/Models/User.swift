@@ -12,13 +12,11 @@ struct User: Codable, CodableObject {
     typealias GenericObject = User
     var name: String
     var calorieLimit: Int
-    var passedLimit: Bool
     var firebaseID: String
     
     struct FirebaseKeys{
         static let userKey = "user"
         static let nameKey = "name"
         static let calorieLimitKey = "calorieLimit"
-        static let passedLimitKey = "passedLimit"
     }
 }

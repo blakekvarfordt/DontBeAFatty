@@ -16,7 +16,7 @@ struct FirebaseManager {
     private static let db = Firestore.firestore()
     
     /// Authenticates a user in the database
-    static func authenticateAndCreateUser(email: String, password: String, userData: [String : Any], firebaseID: String, completion: @escaping (Result<Bool, Error>) -> ()) {
+    static func authenticateAndCreateUser(email: String, password: String, completion: @escaping (Result<Bool, Error>) -> ()) {
         
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if let error = error {
@@ -28,6 +28,7 @@ struct FirebaseManager {
         }
     }
     
+    /// Adds a state listener for user login. Returns a user if user is logged in.
     static func addStateListener(vc: UIViewController, completion:
         @escaping (Bool) -> ()) {
         Auth.auth().addStateDidChangeListener { (auth, user) in

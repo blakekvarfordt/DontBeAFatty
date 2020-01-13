@@ -33,6 +33,7 @@
 		63E4701623CBDB0E0040E5CE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4701523CBDB0E0040E5CE /* LoginViewController.swift */; };
 		63E4702123CBFA000040E5CE /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4702023CBFA000040E5CE /* LoadingViewController.swift */; };
 		63E4702323CC11760040E5CE /* SegueConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4702223CC11760040E5CE /* SegueConstants.swift */; };
+		63E4702523CC1BD70040E5CE /* LabelDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4702423CC1BD70040E5CE /* LabelDesignable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		63E4701523CBDB0E0040E5CE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		63E4702023CBFA000040E5CE /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		63E4702223CC11760040E5CE /* SegueConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueConstants.swift; sourceTree = "<group>"; };
+		63E4702423CC1BD70040E5CE /* LabelDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDesignable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 				63E4700A23CA9CF00040E5CE /* ButtonDesignable.swift */,
 				63E4700C23CAA4C50040E5CE /* TextFieldDesignable.swift */,
 				63E4701123CACE780040E5CE /* ViewDesignable.swift */,
+				63E4702423CC1BD70040E5CE /* LabelDesignable.swift */,
 			);
 			path = Designables;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				63E46FFF23CA56BA0040E5CE /* GenericDecoder.swift in Sources */,
 				63E46FE723C94EFD0040E5CE /* InputViewController.swift in Sources */,
 				63E4701223CACE780040E5CE /* ViewDesignable.swift in Sources */,
+				63E4702523CC1BD70040E5CE /* LabelDesignable.swift in Sources */,
 				63E46FEA23C94F530040E5CE /* ReusableAlerts.swift in Sources */,
 				63E4700D23CAA4C50040E5CE /* TextFieldDesignable.swift in Sources */,
 				63E4700823CA96030040E5CE /* UserController.swift in Sources */,

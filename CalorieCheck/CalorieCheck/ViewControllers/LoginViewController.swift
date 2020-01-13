@@ -7,24 +7,47 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: TextFieldDesignable!
+    @IBOutlet weak var passwordTextField: TextFieldDesignable!
+    @IBOutlet weak var usernameTextField: TextFieldDesignable!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func registerButtonTapped(_ sender: Any) {
     }
-    */
+    
+    
+    func authenticateUser() {
+        guard let email = emailTextField.text,
+            let password = passwordTextField.text else { return }
+        FirebaseManager.authenticateAndCreateUser(email: email, password: password) { (result) in
+            switch result {
+            case .failure(let e):
+                print(e, FirebaseErrors.FailedCreation)
+            case .success:
+                self.createUser()
+            }
+        }
+    }
+    
+    func createUser() {
+        guard let username = usernameTextField.text,
+            let uid = Auth.auth().currentUser?.uid else { return }
+        let user = User(name: username, calorieLimit: 0, firebaseID: uid)
+        UserController.shared.createOrUpdateUser(user) { (success) in
+            if success {
+                Segues.presentViewController(vc: self, name: SegueConstants.main, id: SegueConstants.input)
+            }
+        }
+    }
+    
 
 }
