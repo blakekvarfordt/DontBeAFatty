@@ -14,7 +14,17 @@ class LoadingViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        FirebaseManager.addStateListener(vc: self) { (success) in
+            if success {
+                
+            } else {
+                
+            }
+        }
+    }
     
 
     /*

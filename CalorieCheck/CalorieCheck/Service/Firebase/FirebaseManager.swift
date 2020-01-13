@@ -32,12 +32,12 @@ struct FirebaseManager {
         @escaping (Bool) -> ()) {
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if user == nil {
-                Segues.presentLogin(vc: vc)
+                completion(false)
             } else {
-                    completion(true)
-                }
+                completion(true)
             }
         }
+    }
     
     /// Creates a User collection with things NOT pertaining to login info
     static func createUser(userData: [String : Any], firebaseID: String, completion: @escaping (Result<Bool, Error>) -> ()) {

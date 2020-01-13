@@ -255,7 +255,7 @@
         <!--Navigation Controller-->
         <scene sceneID="f6j-JJ-sTy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eYc-DR-P2Q" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="InputViewController" automaticallyAdjustsScrollViewInsets="NO" id="eYc-DR-P2Q" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xn6-eA-1P8">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -274,7 +274,7 @@
         <!--Loading View Controller-->
         <scene sceneID="xcm-qX-2Gz">
             <objects>
-                <viewController id="mTa-GJ-tdS" customClass="LoadingViewController" customModule="Dont_Be_Fat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoadingViewController" id="mTa-GJ-tdS" customClass="LoadingViewController" customModule="Dont_Be_Fat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LGp-od-PXS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

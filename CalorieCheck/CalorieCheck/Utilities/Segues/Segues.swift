@@ -9,17 +9,17 @@
 import UIKit
 
 class Segues {
-    static func presentSetLimitPopup(vc: UIViewController) {
-        let storyboard = UIStoryboard(name: "Popups", bundle: nil).instantiateViewController(withIdentifier: "SetLimit")
+    
+    static func presentViewController(vc: UIViewController, name: String, id: String) {
+        let storyboard = UIStoryboard(name: name, bundle: nil).instantiateViewController(withIdentifier: id)
         storyboard.modalPresentationStyle = .overFullScreen
         storyboard.modalTransitionStyle = .crossDissolve
         vc.present(storyboard, animated: true)
     }
-    
-    static func presentLogin(vc: UIViewController) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
-        storyboard.modalPresentationStyle = .overFullScreen
-        storyboard.modalTransitionStyle = .crossDissolve
-        vc.present(storyboard, animated: true, completion: nil)
-    }
+}
+struct SegueConstants {
+    static let login = "LoginViewController"
+    static let input = "InputViewController"
+    static let loading = "LoadingViewController"
+    static let setLimit = "SetLimitViewController"
 }
