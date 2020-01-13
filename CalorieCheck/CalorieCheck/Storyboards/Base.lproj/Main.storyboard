@@ -43,6 +43,9 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="qY3-Ge-jnM"/>
@@ -66,6 +69,9 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -170,132 +176,139 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjt-rq-qdz" customClass="ViewDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gUw-4J-Pur">
+                                        <rect key="frame" x="83" y="213" width="248" height="426"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYo-qz-Zw1">
+                                                <rect key="frame" x="0.0" y="0.0" width="248" height="56.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-bs-CvZ" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="61.5" width="248" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="kMv-IZ-5Ak" id="IcY-vM-Vbb"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-qO-wgx">
+                                                <rect key="frame" x="0.0" y="123" width="248" height="56.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZ7-I4-c9a" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="184.5" width="248" height="57"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="kMv-IZ-5Ak" id="D86-7i-SlU"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQD-7L-Upd">
+                                                <rect key="frame" x="0.0" y="246.5" width="248" height="56.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pkl-ZR-8aQ" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="308" width="248" height="56.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="kMv-IZ-5Ak" id="X3Y-K0-ClI"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-OM-klS" customClass="ButtonDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="369.5" width="248" height="56.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
+                                                <state key="normal" title="Register"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="registerButtonTapped:" destination="kMv-IZ-5Ak" eventType="touchUpInside" id="VIk-Ju-FYY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Hq1-bs-CvZ" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="14z-4o-04S"/>
+                                            <constraint firstItem="Hq1-bs-CvZ" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="2nk-XE-XVu"/>
+                                            <constraint firstItem="dQD-7L-Upd" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="4NA-7Z-x6n"/>
+                                            <constraint firstItem="YVc-OM-klS" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="DF7-Eh-xMh"/>
+                                            <constraint firstItem="tqb-qO-wgx" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="MY4-Pm-0ry"/>
+                                            <constraint firstItem="pkl-ZR-8aQ" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="Uav-Oa-not"/>
+                                            <constraint firstItem="dQD-7L-Upd" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="Z0H-9T-SOH"/>
+                                            <constraint firstItem="pkl-ZR-8aQ" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="ZAg-8e-BpK"/>
+                                            <constraint firstItem="YVc-OM-klS" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="gHC-u4-upj"/>
+                                            <constraint firstItem="tqb-qO-wgx" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="mEG-mt-NfP"/>
+                                            <constraint firstItem="SYo-qz-Zw1" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="nZK-jG-vw3"/>
+                                            <constraint firstItem="yZ7-I4-c9a" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="pPQ-6n-oXw"/>
+                                            <constraint firstItem="SYo-qz-Zw1" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="uOp-JG-kxH"/>
+                                            <constraint firstItem="yZ7-I4-c9a" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="zXb-ld-TrS"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="gUw-4J-Pur" firstAttribute="centerY" secondItem="wjt-rq-qdz" secondAttribute="centerY" id="MTN-fH-3TL"/>
+                                    <constraint firstItem="gUw-4J-Pur" firstAttribute="width" secondItem="wjt-rq-qdz" secondAttribute="width" multiplier="0.6" id="UHx-tl-TB3"/>
+                                    <constraint firstItem="gUw-4J-Pur" firstAttribute="height" secondItem="wjt-rq-qdz" secondAttribute="height" multiplier="0.5" id="lBg-ww-xYH"/>
+                                    <constraint firstItem="gUw-4J-Pur" firstAttribute="centerX" secondItem="wjt-rq-qdz" secondAttribute="centerX" id="mLR-Lc-0sw"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gUw-4J-Pur">
-                                <rect key="frame" x="83" y="281.5" width="248" height="387"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYo-qz-Zw1">
-                                        <rect key="frame" x="0.0" y="0.0" width="248" height="51"/>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hq1-bs-CvZ" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="56" width="248" height="51"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="delegate" destination="kMv-IZ-5Ak" id="IcY-vM-Vbb"/>
-                                        </connections>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-qO-wgx">
-                                        <rect key="frame" x="0.0" y="112" width="248" height="51"/>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZ7-I4-c9a" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="168" width="248" height="51"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="10"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="delegate" destination="kMv-IZ-5Ak" id="D86-7i-SlU"/>
-                                        </connections>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQD-7L-Upd">
-                                        <rect key="frame" x="0.0" y="224" width="248" height="51"/>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pkl-ZR-8aQ" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="280" width="248" height="51"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="delegate" destination="kMv-IZ-5Ak" id="X3Y-K0-ClI"/>
-                                        </connections>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-OM-klS" customClass="ButtonDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="336" width="248" height="51"/>
-                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
-                                        <state key="normal" title="Register"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
-                                                <real key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="0.0"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="registerButtonTapped:" destination="kMv-IZ-5Ak" eventType="touchUpInside" id="VIk-Ju-FYY"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Hq1-bs-CvZ" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="14z-4o-04S"/>
-                                    <constraint firstItem="Hq1-bs-CvZ" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="2nk-XE-XVu"/>
-                                    <constraint firstItem="dQD-7L-Upd" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="4NA-7Z-x6n"/>
-                                    <constraint firstItem="YVc-OM-klS" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="DF7-Eh-xMh"/>
-                                    <constraint firstItem="tqb-qO-wgx" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="MY4-Pm-0ry"/>
-                                    <constraint firstItem="pkl-ZR-8aQ" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="Uav-Oa-not"/>
-                                    <constraint firstItem="dQD-7L-Upd" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="Z0H-9T-SOH"/>
-                                    <constraint firstItem="pkl-ZR-8aQ" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="ZAg-8e-BpK"/>
-                                    <constraint firstItem="YVc-OM-klS" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="gHC-u4-upj"/>
-                                    <constraint firstItem="tqb-qO-wgx" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="mEG-mt-NfP"/>
-                                    <constraint firstItem="SYo-qz-Zw1" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="nZK-jG-vw3"/>
-                                    <constraint firstItem="yZ7-I4-c9a" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="pPQ-6n-oXw"/>
-                                    <constraint firstItem="SYo-qz-Zw1" firstAttribute="width" secondItem="gUw-4J-Pur" secondAttribute="width" id="uOp-JG-kxH"/>
-                                    <constraint firstItem="yZ7-I4-c9a" firstAttribute="centerX" secondItem="gUw-4J-Pur" secondAttribute="centerX" id="zXb-ld-TrS"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="gUw-4J-Pur" firstAttribute="centerX" secondItem="ewN-gV-JXo" secondAttribute="centerX" id="5Jh-Pi-bsH"/>
-                            <constraint firstItem="gUw-4J-Pur" firstAttribute="width" secondItem="ewN-gV-JXo" secondAttribute="width" multiplier="0.6" id="6dO-Vl-ULy"/>
                             <constraint firstItem="wjt-rq-qdz" firstAttribute="height" secondItem="ewN-gV-JXo" secondAttribute="height" constant="78" id="JuD-xl-fGO"/>
                             <constraint firstItem="wjt-rq-qdz" firstAttribute="centerX" secondItem="ewN-gV-JXo" secondAttribute="centerX" id="NxH-w2-ITs"/>
                             <constraint firstItem="0We-03-MVJ" firstAttribute="height" secondItem="ewN-gV-JXo" secondAttribute="height" constant="79" id="XvT-wX-uQY"/>
                             <constraint firstItem="0We-03-MVJ" firstAttribute="width" secondItem="ewN-gV-JXo" secondAttribute="width" id="ZCk-al-cdd"/>
                             <constraint firstItem="0We-03-MVJ" firstAttribute="centerX" secondItem="ewN-gV-JXo" secondAttribute="centerX" id="ckL-Zq-iUt"/>
                             <constraint firstItem="0We-03-MVJ" firstAttribute="centerY" secondItem="ewN-gV-JXo" secondAttribute="centerY" constant="-4.5" id="f8F-2I-X4s"/>
-                            <constraint firstItem="gUw-4J-Pur" firstAttribute="centerY" secondItem="ewN-gV-JXo" secondAttribute="centerY" id="fQU-E0-bPo"/>
-                            <constraint firstItem="gUw-4J-Pur" firstAttribute="height" secondItem="ewN-gV-JXo" secondAttribute="height" multiplier="0.5" id="go6-3b-TbY"/>
                             <constraint firstItem="wjt-rq-qdz" firstAttribute="centerY" secondItem="ewN-gV-JXo" secondAttribute="centerY" constant="-5" id="yFs-VA-DYW"/>
                             <constraint firstItem="wjt-rq-qdz" firstAttribute="width" secondItem="ewN-gV-JXo" secondAttribute="width" id="z6T-t5-q8m"/>
                         </constraints>
@@ -304,8 +317,8 @@
                     <navigationItem key="navigationItem" title="Register" id="kLY-1A-GVQ"/>
                     <connections>
                         <outlet property="emailTextField" destination="Hq1-bs-CvZ" id="BDL-Qr-f72"/>
+                        <outlet property="loginStackView" destination="gUw-4J-Pur" id="mBM-cV-Qqb"/>
                         <outlet property="passwordTextField" destination="yZ7-I4-c9a" id="tuh-hv-Hgh"/>
-                        <outlet property="stackView" destination="gUw-4J-Pur" id="mBM-cV-Qqb"/>
                         <outlet property="usernameTextField" destination="pkl-ZR-8aQ" id="Tb2-DJ-Gdm"/>
                     </connections>
                 </viewController>
