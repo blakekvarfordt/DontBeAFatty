@@ -52,10 +52,17 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: UITextFieldDelegate {
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         Animations.transitionUpwards(view: stackView, height: 120)
     }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         Animations.transitionDownwards(view: stackView, height: 120)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
 }

@@ -33,7 +33,6 @@ extension InputViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         Animations.transitionUpwards(view: inputStackView, height: 80)
         Animations.transitionUpwards(view: caloriesLeftLabel, height: 50)
-        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
