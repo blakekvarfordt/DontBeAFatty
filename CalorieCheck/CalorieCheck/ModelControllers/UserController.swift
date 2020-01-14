@@ -11,6 +11,12 @@ import Foundation
 class UserController {
     static let shared = UserController()
     
+    var currentUser: User? {
+        didSet {
+            print("We have a user!!!")
+        }
+    }
+    
     func createOrUpdateUser(_ user: User, firebaseID: String, completion: @escaping (Bool) -> Void) {
         guard let jsonString = User.encode(object: user) else {completion(false); return}
         FirebaseManager.createUser(userData: jsonString, firebaseID: firebaseID) {(result) in
@@ -32,6 +38,7 @@ class UserController {
                 completion(nil)
             case .success(let data):
                 guard let user = User.decode(data: data) else {completion(nil); return}
+                self.currentUser = user
                 completion(user)
             }
         }

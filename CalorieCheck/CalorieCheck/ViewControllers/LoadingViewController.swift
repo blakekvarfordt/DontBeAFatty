@@ -12,6 +12,7 @@ class LoadingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchUser()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,6 +26,15 @@ class LoadingViewController: UIViewController {
                 Segues.presentViewController(vc: self, name: SegueConstants.main, id: SegueConstants.input)
             } else {
                 Segues.presentViewController(vc: self, name: SegueConstants.main, id: SegueConstants.login)
+            }
+        }
+    }
+    
+    func fetchUser() {
+        guard let user = FirebaseManager.currentUser else { return }
+        UserController.shared.fetchUser(uid: user) { (user) in
+            if user != nil {
+                // run some logic. IDK
             }
         }
     }
