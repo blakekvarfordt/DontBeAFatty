@@ -24,7 +24,7 @@ class InputViewController: UIViewController {
     }
     
     @IBAction func setLimitButtonTapped(_ sender: Any) {
-        Segues.presentViewController(vc: self, name: SegueConstants.setLimit, id: SegueConstants.setLimit)
+        Segues.presentViewController(vc: self, name: SegueConstants.popups, id: SegueConstants.setLimit)
     }
     
     func setupInitialViews() {

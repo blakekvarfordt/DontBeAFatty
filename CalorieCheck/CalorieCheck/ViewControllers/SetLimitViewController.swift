@@ -30,8 +30,19 @@ class SetLimitViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func setLimitButtonTapped(_ sender: Any) {
+        
+    }
     
     // MARK: - Functions
+    
+    func setNewLimit() {
+        guard let limit = setLimitTextField.text else { return }
+        if let myNumber = NumberFormatter().number(from: limit) {
+            let myInt = myNumber.intValue
+            UserController.shared.currentUser?.calorieLimit = myInt
+        }
+    }
 }
 
 
@@ -40,7 +51,7 @@ class SetLimitViewController: UIViewController {
 extension SetLimitViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.text = ""
+        
     }
     
 }
