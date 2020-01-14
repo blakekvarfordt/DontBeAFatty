@@ -13,7 +13,7 @@ class UserController {
     
     var currentUser: User? {
         didSet {
-            print("We have a user!!!")
+            NotificationCenter.default.post(name: NSNotification.Name("didFetchUser"), object: nil)
         }
     }
     

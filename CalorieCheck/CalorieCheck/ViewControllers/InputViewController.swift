@@ -13,17 +13,24 @@ class InputViewController: UIViewController {
     @IBOutlet weak var inputStackView: UIStackView!
     @IBOutlet weak var caloriesLeftLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(didFetchUser), name: NSNotification.Name(rawValue: "didFetchUser"), object: nil)
+    }
+    
+    @objc func didFetchUser() {
+        setupInitialViews()
     }
     
     @IBAction func setLimitButtonTapped(_ sender: Any) {
         Segues.presentViewController(vc: self, name: SegueConstants.setLimit, id: SegueConstants.setLimit)
     }
     
-    
+    func setupInitialViews() {
+        guard let currentUser = UserController.shared.currentUser else { return }
+        caloriesLeftLabel.text = "\(currentUser.calorieLimit)"
+    }
 }
 
 
