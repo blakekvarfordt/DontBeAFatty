@@ -14,6 +14,7 @@ struct FirebaseManager {
     
     /// Database
     private static let db = Firestore.firestore()
+    static let randomFoodDocID = db.food.document().documentID
     static let currentUser = Auth.auth().currentUser?.uid
     static var userID: String?
     

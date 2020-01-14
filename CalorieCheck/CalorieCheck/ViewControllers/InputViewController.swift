@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 class InputViewController: UIViewController {
     
     @IBOutlet weak var inputStackView: UIStackView!
     @IBOutlet weak var caloriesLeftLabel: UILabel!
+    @IBOutlet weak var foodTextField: TextFieldDesignable!
+    @IBOutlet weak var caloriesTextField: TextFieldDesignable!
     
     
     override func viewDidLoad() {
@@ -27,9 +30,25 @@ class InputViewController: UIViewController {
         Segues.presentViewController(vc: self, name: SegueConstants.popups, id: SegueConstants.setLimit)
     }
     
+    @IBAction func addFoodButtonTapped(_ sender: Any) {
+        addFood()
+    }
+    
     func setupInitialViews() {
         guard let currentUser = UserController.shared.currentUser else { return }
-        caloriesLeftLabel.text = "\(currentUser.calorieLimit)"
+        caloriesLeftLabel.text = " Current: \(currentUser.currentCalories)"
+    }
+    
+    func addFood() {
+        guard let foodItem = foodTextField.text,
+            let calories = caloriesTextField.text,
+            let userRef = UserController.shared.currentUser?.firebaseID else { return }
+        
+        if let myNumber = NumberFormatter().number(from: calories) {
+            let cal = myNumber.intValue
+            let foodObject = Food(name: foodItem, calories: cal, userRef: userRef, firebaseID: FirebaseManager.randomFoodDocID)
+            
+        }
     }
 }
 

@@ -98,6 +98,9 @@
                                                         <real key="value" value="50"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="addFoodButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hxb-iU-Ci6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -109,7 +112,7 @@
                                             <constraint firstItem="MGo-Oa-bu5" firstAttribute="centerX" secondItem="8b1-Bz-5jE" secondAttribute="centerX" id="y52-mN-qy7"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-mI-3Jj">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Calories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbC-mI-3Jj">
                                         <rect key="frame" x="0.0" y="206" width="414" height="43"/>
                                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -156,6 +159,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="caloriesLeftLabel" destination="VbC-mI-3Jj" id="caW-S3-Xun"/>
+                        <outlet property="caloriesTextField" destination="gxf-Uc-BzD" id="FDv-3N-12M"/>
+                        <outlet property="foodTextField" destination="MGo-Oa-bu5" id="tzl-yF-2WB"/>
                         <outlet property="inputStackView" destination="8b1-Bz-5jE" id="GF6-HH-2wM"/>
                     </connections>
                 </viewController>
