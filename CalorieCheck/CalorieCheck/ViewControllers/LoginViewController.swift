@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
     func createUser() {
         guard let username = usernameTextField.text,
             let uid = FirebaseManager.userID else { return }
-        let user = User(name: username, calorieLimit: 0, firebaseID: uid)
+        let user = User(name: username, calorieLimit: 0, currentCalories: 0, firebaseID: uid)
         UserController.shared.createOrUpdateUser(user, firebaseID: uid) { (success) in
             if success {
                 Segues.presentViewController(vc: self, name: SegueConstants.main, id: SegueConstants.input)
