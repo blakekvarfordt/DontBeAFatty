@@ -11,9 +11,9 @@ import Foundation
 class UserController {
     static let shared = UserController()
     
-    func createOrUpdateUser(_ user: User, completion: @escaping (Bool) -> Void) {
+    func createOrUpdateUser(_ user: User, firebaseID: String, completion: @escaping (Bool) -> Void) {
         guard let jsonString = User.encode(object: user) else {completion(false); return}
-        FirebaseManager.createUser(userData: jsonString, firebaseID: user.firebaseID) {(result) in
+        FirebaseManager.createUser(userData: jsonString, firebaseID: firebaseID) {(result) in
             switch result {
             case .failure(let e):
                 print("failed to create user: \(e.localizedDescription)")

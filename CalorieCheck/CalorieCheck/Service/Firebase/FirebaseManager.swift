@@ -14,7 +14,7 @@ struct FirebaseManager {
     
     /// Database
     private static let db = Firestore.firestore()
-    static var userID = Auth.auth().currentUser?.uid
+    static var userID: String?
     
     /// Authenticates a user in the database
     static func authenticateAndCreateUser(email: String, password: String, completion: @escaping (Result<Bool, Error>) -> ()) {
@@ -24,7 +24,8 @@ struct FirebaseManager {
                 completion(.failure(error))
                 print(FirebaseErrors.FailedCreation)
             } else {
-                userID = user?.user.uid
+                guard let newUserID = user?.user.uid else { return }
+                userID = newUserID
                 completion(.success(true))
             }
         }
