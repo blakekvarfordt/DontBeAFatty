@@ -12,6 +12,7 @@ class SetLimitViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var setLimitTextField: UITextField!
+    @IBOutlet weak var limitLabel: UILabel!
     
     
     // MARK: - Properties
@@ -31,7 +32,7 @@ class SetLimitViewController: UIViewController {
     }
     
     @IBAction func setLimitButtonTapped(_ sender: Any) {
-        
+        setNewLimit()
     }
     
     // MARK: - Functions
@@ -41,6 +42,14 @@ class SetLimitViewController: UIViewController {
         if let myNumber = NumberFormatter().number(from: limit) {
             let myInt = myNumber.intValue
             UserController.shared.currentUser?.calorieLimit = myInt
+            guard let user = UserController.shared.currentUser else { return }
+            UserController.shared.createOrUpdateUser(user, firebaseID: user.firebaseID) { (success) in
+                if success {
+                    self.limitLabel.text = "Limit: \(user.calorieLimit)"
+                } else {
+                    // present an error message to user
+                }
+            }
         }
     }
 }
