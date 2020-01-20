@@ -15,7 +15,7 @@ class InputViewController: UIViewController {
     @IBOutlet weak var caloriesLeftLabel: UILabel!
     @IBOutlet weak var foodTextField: TextFieldDesignable!
     @IBOutlet weak var caloriesTextField: TextFieldDesignable!
-    
+    @IBOutlet weak var limitLabel: LabelDesignable!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +37,7 @@ class InputViewController: UIViewController {
     func setupInitialViews() {
         guard let currentUser = UserController.shared.currentUser else { return }
         caloriesLeftLabel.text = " Current: \(currentUser.currentCalories)"
+        limitLabel.text = "Limit: \(currentUser.calorieLimit)"
     }
     
     func addFood() {

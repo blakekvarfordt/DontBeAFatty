@@ -46,6 +46,7 @@ class SetLimitViewController: UIViewController {
             UserController.shared.createOrUpdateUser(user, firebaseID: user.firebaseID) { (success) in
                 if success {
                     self.limitLabel.text = "Limit: \(user.calorieLimit)"
+                    self.setLimitTextField.text = ""
                 } else {
                     // present an error message to user
                 }
