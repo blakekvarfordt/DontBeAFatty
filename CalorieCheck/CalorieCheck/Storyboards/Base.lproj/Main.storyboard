@@ -177,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="116.51785714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="SJ3-IK-Fwm">
             <objects>
-                <viewController id="qvj-tD-zSI" sceneMemberID="viewController">
+                <viewController id="qvj-tD-zSI" customClass="LoginViewController" customModule="Dont_Be_Fat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TNn-fP-ZFX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,13 +195,13 @@
                                         <rect key="frame" x="83" y="218.5" width="248" height="437"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAD-hk-asa">
-                                                <rect key="frame" x="0.0" y="0.0" width="248" height="83.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="248" height="68.5"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="7ue-JM-nBx" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="88.5" width="248" height="83.5"/>
+                                                <rect key="frame" x="0.0" y="73.5" width="248" height="69"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
                                                 <userDefinedRuntimeAttributes>
@@ -214,13 +214,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aw5-Wj-UhF">
-                                                <rect key="frame" x="0.0" y="177" width="248" height="83"/>
+                                                <rect key="frame" x="0.0" y="147.5" width="248" height="68.5"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="m4s-ct-9jK" customClass="TextFieldDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="265" width="248" height="83.5"/>
+                                                <rect key="frame" x="0.0" y="221" width="248" height="68.5"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES"/>
@@ -234,7 +234,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfQ-D9-shx" customClass="ButtonDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="353.5" width="248" height="83.5"/>
+                                                <rect key="frame" x="0.0" y="294.5" width="248" height="69"/>
                                                 <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
                                                 <state key="normal" title="Login"/>
                                                 <userDefinedRuntimeAttributes>
@@ -251,6 +251,22 @@
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="qvj-tD-zSI" eventType="touchUpInside" id="4b4-Oc-ZzH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvf-BN-Wp1" customClass="ButtonDesignable" customModule="Dont_Be_Fat" customModuleProvider="target">
+                                                <rect key="frame" x="28" y="368.5" width="192" height="68.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
+                                                <state key="normal" title="Create Account"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="createAccountButtonTapped:" destination="qvj-tD-zSI" eventType="touchUpInside" id="GXn-RB-VeR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -295,6 +311,11 @@
                         <viewLayoutGuide key="safeArea" id="8q9-86-TGt"/>
                     </view>
                     <navigationItem key="navigationItem" id="anv-vh-BPU"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="7ue-JM-nBx" id="EHU-eL-Swn"/>
+                        <outlet property="passwordTextField" destination="m4s-ct-9jK" id="hc5-7k-e8k"/>
+                        <outlet property="stackView" destination="D3q-xg-dJL" id="otl-yz-Cwm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWl-OT-ynp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -452,11 +473,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ewN-gV-JXo"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Register" id="kLY-1A-GVQ"/>
+                    <navigationItem key="navigationItem" title="Register" id="kLY-1A-GVQ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dAe-Wz-2cu">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelRegistrationButtonTapped:" destination="kMv-IZ-5Ak" id="saH-Yb-1F3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="Hq1-bs-CvZ" id="BDL-Qr-f72"/>
-                        <outlet property="loginStackView" destination="gUw-4J-Pur" id="mBM-cV-Qqb"/>
                         <outlet property="passwordTextField" destination="yZ7-I4-c9a" id="tuh-hv-Hgh"/>
+                        <outlet property="stackView" destination="gUw-4J-Pur" id="mBM-cV-Qqb"/>
                         <outlet property="usernameTextField" destination="pkl-ZR-8aQ" id="Tb2-DJ-Gdm"/>
                     </connections>
                 </viewController>
@@ -515,7 +543,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1so-01-Kpl">
             <objects>
-                <navigationController storyboardIdentifier="LoginViewController" automaticallyAdjustsScrollViewInsets="NO" id="DTx-87-Iwj" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RegisterViewController" automaticallyAdjustsScrollViewInsets="NO" id="DTx-87-Iwj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ggB-QV-P89">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -534,7 +562,7 @@
         <!--Navigation Controller-->
         <scene sceneID="PmG-Zk-tfx">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a7u-sY-fcl" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginViewController" automaticallyAdjustsScrollViewInsets="NO" id="a7u-sY-fcl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gvO-uS-3i9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

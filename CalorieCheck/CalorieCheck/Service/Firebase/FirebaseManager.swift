@@ -42,6 +42,19 @@ struct FirebaseManager {
         }
     }
     
+    static func signInAuthentication(email: String, password: String, completion: @escaping (Bool) -> Void) {
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            if result?.user == nil {
+                completion(false)
+            } else {
+                completion(true)
+            }
+        }
+    }
+    
     /// Adds a state listener for user login. Returns a user if user is logged in.
     static func addStateListener(vc: UIViewController, completion:
         @escaping (Bool) -> ()) {

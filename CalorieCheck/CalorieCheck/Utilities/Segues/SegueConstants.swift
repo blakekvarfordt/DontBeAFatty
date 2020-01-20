@@ -13,6 +13,7 @@ struct SegueConstants {
     static let popups = "Popups"
     
     static let login = "LoginViewController"
+    static let register = "RegisterViewController"
     static let input = "InputViewController"
     static let loading = "LoadingViewController"
     static let setLimit = "SetLimitViewController"
