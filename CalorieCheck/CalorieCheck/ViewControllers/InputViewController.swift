@@ -12,7 +12,7 @@ import FirebaseFirestore
 class InputViewController: UIViewController {
     
     @IBOutlet weak var inputStackView: UIStackView!
-    @IBOutlet weak var caloriesLeftLabel: UILabel!
+    @IBOutlet weak var currentCaloriesLabel: UILabel!
     @IBOutlet weak var foodTextField: TextFieldDesignable!
     @IBOutlet weak var caloriesTextField: TextFieldDesignable!
     @IBOutlet weak var limitLabel: LabelDesignable!
@@ -36,7 +36,7 @@ class InputViewController: UIViewController {
     
     func setupInitialViews() {
         guard let currentUser = UserController.shared.currentUser else { return }
-        caloriesLeftLabel.text = " Current: \(currentUser.currentCalories)"
+        currentCaloriesLabel.text = " Current: \(currentUser.currentCalories)"
         limitLabel.text = "Limit: \(currentUser.calorieLimit)"
     }
     
@@ -48,6 +48,26 @@ class InputViewController: UIViewController {
         if let myNumber = NumberFormatter().number(from: calories) {
             let cal = myNumber.intValue
             let foodObject = Food(name: foodItem, calories: cal, userRef: userRef, firebaseID: FirebaseManager.randomFoodDocID)
+            FoodController.shared.createAndUpdateFood(food: foodObject, firebaseID: foodObject.firebaseID) { (success) in
+                if success {
+                    self.updateUserCurrentCalories()
+                }
+            }
+        }
+    }
+    
+    func updateUserCurrentCalories() {
+        guard let calories = caloriesTextField.text,
+            let number = NumberFormatter().number(from: calories)  else { return }
+        let cal = number.intValue
+        UserController.shared.currentUser?.currentCalories += cal
+        guard let user = UserController.shared.currentUser else { return }
+        UserController.shared.createOrUpdateUser(user, firebaseID: user.firebaseID) { (success) in
+            if success {
+                self.currentCaloriesLabel.text = "Current: \(user.currentCalories)"
+            } else {
+                // display error message to the user
+            }
         }
     }
 }
@@ -58,12 +78,12 @@ extension InputViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         Animations.transitionUpwards(view: inputStackView, height: 80)
-        Animations.transitionUpwards(view: caloriesLeftLabel, height: 50)
+        Animations.transitionUpwards(view: currentCaloriesLabel, height: 50)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         Animations.transitionDownwards(view: inputStackView, height: 80)
-        Animations.transitionDownwards(view: caloriesLeftLabel, height: 50)
+        Animations.transitionDownwards(view: currentCaloriesLabel, height: 50)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

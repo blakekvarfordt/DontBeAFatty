@@ -166,8 +166,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="caloriesLeftLabel" destination="VbC-mI-3Jj" id="caW-S3-Xun"/>
                         <outlet property="caloriesTextField" destination="gxf-Uc-BzD" id="FDv-3N-12M"/>
+                        <outlet property="currentCaloriesLabel" destination="VbC-mI-3Jj" id="caW-S3-Xun"/>
                         <outlet property="foodTextField" destination="MGo-Oa-bu5" id="tzl-yF-2WB"/>
                         <outlet property="inputStackView" destination="8b1-Bz-5jE" id="GF6-HH-2wM"/>
                         <outlet property="limitLabel" destination="HsI-Tw-rEK" id="UDx-HD-5fa"/>
