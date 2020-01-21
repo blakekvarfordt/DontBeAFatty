@@ -48,7 +48,6 @@ class InputViewController: UIViewController {
         if let myNumber = NumberFormatter().number(from: calories) {
             let cal = myNumber.intValue
             let foodObject = Food(name: foodItem, calories: cal, userRef: userRef, firebaseID: FirebaseManager.randomFoodDocID)
-            
         }
     }
 }

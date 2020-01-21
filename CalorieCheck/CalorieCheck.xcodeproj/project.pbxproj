@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0ECA53D9DD0112AF52767826 /* Pods_CalorieCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 383E97EBDCBF5F072A2870BE /* Pods_CalorieCheck.framework */; };
+		63B8A53A23D68AC500422BD9 /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B8A53923D68AC500422BD9 /* FoodController.swift */; };
 		63E46FC923C945BE0040E5CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FC823C945BE0040E5CE /* AppDelegate.swift */; };
 		63E46FCB23C945BE0040E5CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E46FCA23C945BE0040E5CE /* SceneDelegate.swift */; };
 		63E46FD023C945BE0040E5CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E46FCE23C945BE0040E5CE /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		05BE9F93084F101C532778A3 /* Pods-CalorieCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCheck.debug.xcconfig"; path = "Target Support Files/Pods-CalorieCheck/Pods-CalorieCheck.debug.xcconfig"; sourceTree = "<group>"; };
 		383E97EBDCBF5F072A2870BE /* Pods_CalorieCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalorieCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4317FA2C8E515AE43823D87B /* Pods-CalorieCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalorieCheck.release.xcconfig"; path = "Target Support Files/Pods-CalorieCheck/Pods-CalorieCheck.release.xcconfig"; sourceTree = "<group>"; };
+		63B8A53923D68AC500422BD9 /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
 		63E46FC523C945BE0040E5CE /* Dont Be Fat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dont Be Fat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E46FC823C945BE0040E5CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E46FCA23C945BE0040E5CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				63E4700723CA96030040E5CE /* UserController.swift */,
+				63B8A53923D68AC500422BD9 /* FoodController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				63E4701223CACE780040E5CE /* ViewDesignable.swift in Sources */,
 				63E4702523CC1BD70040E5CE /* LabelDesignable.swift in Sources */,
 				63E46FEA23C94F530040E5CE /* ReusableAlerts.swift in Sources */,
+				63B8A53A23D68AC500422BD9 /* FoodController.swift in Sources */,
 				63E4700D23CAA4C50040E5CE /* TextFieldDesignable.swift in Sources */,
 				63E4700823CA96030040E5CE /* UserController.swift in Sources */,
 				63E46FF823CA4F3D0040E5CE /* FirebaseManager.swift in Sources */,
