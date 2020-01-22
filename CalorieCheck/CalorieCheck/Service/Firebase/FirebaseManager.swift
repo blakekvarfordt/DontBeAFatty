@@ -104,8 +104,20 @@ struct FirebaseManager {
 
 // MARK: - Food Methods
 extension FirebaseManager {
-    static func createAndUpdateFoodItem(foodData: [String : Any], firebaseID: String, completion: @escaping (Bool) -> Void) {
-        db.food.document(firebaseID).setData(foodData, merge: true) { (error) in
+    
+    static func createFoodItem(foodData: [String : Any], completion: @escaping (Bool) -> Void) {
+        db.food.addDocument(data: foodData) { (error) in
+            if let error = error {
+                print(error.localizedDescription)
+                completion(false)
+            } else {
+                completion(true)
+            }
+        }
+    }
+    
+    static func updateFoodItem(foodData: [String : Any], documentID: String, completion: @escaping (Bool) -> Void) {
+        db.food.document(documentID).setData(foodData, merge: true) { (error) in
             if let error = error {
                 print(error.localizedDescription)
                 completion(false)

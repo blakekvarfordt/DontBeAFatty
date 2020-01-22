@@ -40,6 +40,8 @@ class InputViewController: UIViewController {
         limitLabel.text = "Limit: \(currentUser.calorieLimit)"
     }
     
+    let documentID = FirebaseManager.randomFoodDocID
+    
     func addFood() {
         guard let foodItem = foodTextField.text,
             let calories = caloriesTextField.text,
@@ -47,8 +49,8 @@ class InputViewController: UIViewController {
         
         if let myNumber = NumberFormatter().number(from: calories) {
             let cal = myNumber.intValue
-            let foodObject = Food(name: foodItem, calories: cal, userRef: userRef, firebaseID: FirebaseManager.randomFoodDocID)
-            FoodController.shared.createAndUpdateFood(food: foodObject, firebaseID: foodObject.firebaseID) { (success) in
+            let foodObject = Food(name: foodItem, calories: cal, userRef: userRef, firebaseID: documentID)
+            FoodController.shared.createFood(food: foodObject) { (success) in
                 if success {
                     self.updateUserCurrentCalories()
                 }
@@ -65,10 +67,16 @@ class InputViewController: UIViewController {
         UserController.shared.createOrUpdateUser(user, firebaseID: user.firebaseID) { (success) in
             if success {
                 self.currentCaloriesLabel.text = "Current: \(user.currentCalories)"
+                self.emptyTextFields()
             } else {
                 // display error message to the user
             }
         }
+    }
+    
+    func emptyTextFields() {
+        caloriesTextField.text = ""
+        foodTextField.text = ""
     }
 }
 

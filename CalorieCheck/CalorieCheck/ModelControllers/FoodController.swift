@@ -11,9 +11,9 @@ import Foundation
 class FoodController {
     static let shared = FoodController()
     
-    func createAndUpdateFood(food: Food, firebaseID: String, completion: @escaping (Bool) -> Void) {
+    func createFood(food: Food, completion: @escaping (Bool) -> Void) {
         guard let jsonData = Food.encode(object: food) else { return }
-        FirebaseManager.createAndUpdateFoodItem(foodData: jsonData, firebaseID: firebaseID) { (success) in
+        FirebaseManager.createFoodItem(foodData: jsonData) { (success) in
             if success {
                 completion(true)
             } else {
